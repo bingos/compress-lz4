@@ -15,6 +15,7 @@ sub MY::top_targets {
 all      :: static
 pure_all :: static
 static   :: lz4\$(LIB_EXT)
+dynamic  ::
 
 lz4\$(LIB_EXT): \$(O_FILES)
 \t\$(AR) cr lz4\$(LIB_EXT) \$(O_FILES)
